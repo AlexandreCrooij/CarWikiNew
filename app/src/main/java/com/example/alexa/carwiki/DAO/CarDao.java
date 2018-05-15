@@ -19,8 +19,8 @@ public interface CarDao {
     @Query("DELETE FROM cars")
     public void deleteAllCars();
 
-    @Query("DELETE FROM cars WHERE id = :id")
-    public void deleteCarWithId(int id);
+    @Query("DELETE FROM cars WHERE id = :id2")
+    public void deleteCarWithId(int id2);
 
     @Update
     public void updateCar(CarEntity... cars);
